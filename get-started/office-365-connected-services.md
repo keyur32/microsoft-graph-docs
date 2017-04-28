@@ -1,4 +1,3 @@
-
 # Call Office 365 Services in Visual Studio with the Microsoft Graph
 
 This walkthrough will show you how to use the Connected Services in Visual Studio to configure your app so you can call the Microsoft Graph. We'll use a starter sample, which will show you how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
@@ -11,7 +10,6 @@ This walkthrough will show you how to use the Connected Services in Visual Studi
 
 2. You will also need an Office 365 Subscription. You can get a free trial by joining the [Office 365 Developer program](https://dev.office.com/devprogram).
 
-
 ## Get the Starter Project
 
 1. Clone the following repository:https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice. This sample will give you the references you need to authenticate against the Microsoft Graph. 
@@ -20,12 +18,11 @@ This walkthrough will show you how to use the Connected Services in Visual Studi
 
 
 ## Add the Connected Service
-You're now ready to add the Microsoft Graph service to your Visual Studio project. 
+sYou're now ready to add the Microsoft Graph service to your Visual Studio project. 
 
 In order to successfully build this example, we'll walk you through setting the following permissions for the Office 365 Services with the Microsoft Graph. 
 - For the **File** APIs, set permissions to **Have full access to your files**.
 - For the **Mail** APIs, set permissions to **Send mail as you**.- For the **User** APIs, set permissions to **Sign you in and read your profile**.
-
 1. In Solution Explorer, double-click on "Connected Services" which will open the Connected Services tab. 
 
 2. Choose the "Access Office 365 Services with Microsoft Graph" provider and follow the wizard and select the scopes above.  You can also follow this same step to change the permisssions at a later time.
@@ -52,7 +49,7 @@ The Starter sample is configured to send a simple email. Let's now leverage the 
         GetSharingLink(GraphServiceClient graphClient, string Id)
     ```
  
- Each comment '//Uncomment:'
+> Tip: Each comment starts with '//Uncomment:'
  
 
 ## Run the Sample
