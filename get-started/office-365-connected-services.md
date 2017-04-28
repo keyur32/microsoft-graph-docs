@@ -2,6 +2,8 @@
 
 This walkthrough will show you how to use the Connected Services in Visual Studio to configure your app so you can call the Microsoft Graph. We'll use a starter sample, which will show you how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
 
+> Note: Skip directly to [Get the Starter Project](#GettheStartProject) if you've just used the Connected Services in Visual Studio 2017 Preview
+
 ## Getting Setup
 
 1. To use the Office 365 Connected Services with the Microsoft Graph, you will first need to download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/).
