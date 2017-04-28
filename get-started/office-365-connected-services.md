@@ -1,7 +1,7 @@
 
 # Call Office 365 Services in Visual Studio with the Microsoft Graph
 
-This walkthrough will show you how to use the Connected Services in Visual Studio to configure your app so you can call the Microsoft Graph. We'll use a starter sample, which will shwo you how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
+This walkthrough will show you how to use the Connected Services in Visual Studio to configure your app so you can call the Microsoft Graph. We'll use a starter sample, which will show you how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
 
 ## Getting Setup
 
@@ -9,7 +9,7 @@ This walkthrough will show you how to use the Connected Services in Visual Studi
 
     > Even if you are using an older version of Visual Studio, Visual Studio 2017 Preview will work fine side by side.
 
-2. You will also need an Office 365 Subscription. You can get one a free trial by joining the [Office 365 Developer program](https://dev.office.com/devprogram).
+2. You will also need an Office 365 Subscription. You can get a free trial by joining the [Office 365 Developer program](https://dev.office.com/devprogram).
 
 
 ## Get the Starter Project
@@ -26,15 +26,15 @@ In order to successfully build this example, we'll walk you through setting the 
 - For the **File** APIs, set permissions to **Have full access to your files**.
 - For the **Mail** APIs, set permissions to **Send mail as you**.- For the **User** APIs, set permissions to **Sign you in and read your profile**.
 
-1. In Solution Explorer, right-click the project and select Add > Connected Service.
+1. In Solution Explorer, double-click on "Connected Services" which will open the Connected Services tab. 
 
-2. Choose the Office 365 Connected Services and follow the wizard and select the scopes above.  You can also follow this same step to change the permisssions at a later time.
+2. Choose the "Access Office 365 Services with Microsoft Graph" provider and follow the wizard and select the scopes above.  You can also follow this same step to change the permisssions at a later time.
 
 [ADD GIF SCREENSHOT SHOWING FLOW]
 
 ## Call the Microsoft Graph
 
-The Starter sample is configured to send a simple email. Let's now leverage power of the Microsoft Graph and update it to call multiple scenarios to complete our scenario.
+The Starter sample is configured to send a simple email. Let's now leverage the power of Microsoft Graph to update it to send an email with the link to the signed-in user's profile photo uploaded on OneDrive.
 
 1. Navigate to the 'GraphService.cs' which hosts our code to call the Graph.
 
