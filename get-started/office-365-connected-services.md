@@ -1,4 +1,4 @@
-# Call Office 365 Services in Visual Studio with the Microsoft Graph
+ # Call Office 365 Services in Visual Studio with the Microsoft Graph
 
 This walkthrough will show you how to use the Connected Services in Visual Studio to configure your app so you can call the Microsoft Graph. We'll use a starter sample, which will show you how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
 
@@ -14,13 +14,13 @@ This walkthrough will show you how to use the Connected Services in Visual Studi
 
 ## Get the Starter Project
 
-1. Clone the following repository:https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice. This sample will give you the references you need to authenticate against the Microsoft Graph. 
+1. Clone the following repository at https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice. This sample will give you the references you need to authenticate against the Microsoft Graph. 
 
 2. Open it in Visual Studio 2017 Preview.
 
 
 ## Add the Connected Service
-sYou're now ready to add the Microsoft Graph service to your Visual Studio project. 
+You're now ready to add the Microsoft Graph service to your Visual Studio project. 
 
 In order to successfully build this example, we'll walk you through setting the following permissions for the Office 365 Services with the Microsoft Graph. 
 - For the **File** APIs, set permissions to **Have full access to your files**.
@@ -35,7 +35,7 @@ In order to successfully build this example, we'll walk you through setting the 
 
 The Starter sample is configured to send a simple email. Let's now leverage the power of Microsoft Graph to update it to send an email with the link to the signed-in user's profile photo uploaded on OneDrive.
 
-1. Navigate to the 'GraphService.cs' which hosts our code to call the Graph.
+1. Navigate to 'Models\GraphService.cs' which hosts our code to call the Graph.
 
 2. Find and **Uncomment** calls to the SDK in the following methods, to see how we can call the Graph to get a profile photo, upload a file to OneDrive and get a Sharing Link.
 
